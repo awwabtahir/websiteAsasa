@@ -1,0 +1,40 @@
+
+#buy-rent-form{
+	width: 50%;
+	height: 50%;
+	border: 2px solid #000;
+	border-radius: 15px;
+	box-shadow: 7px 7px 15px rgba(0,0,0,0.6);
+	margin: 7% auto;
+	margin-left: 5%;
+	/*margin-top: 5%;*/
+/*	opacity: 0.65;*/
+	padding: 15px;
+	background-color: black;
+}
+#cities{
+	
+	height: 50%;
+	width: 35%;
+	border: 2px solid #000;
+	border-radius: 15px;
+	box-shadow: 7px 7px 15px rgba(0,0,0,0.6);
+	margin: 7% auto;
+	margin-left: 5%;
+	/*margin-top: 5%;*/
+	/*opacity: 0.65;*/
+	padding: 15px;
+	padding-left: 15px;
+	background-color: black;
+}
+#grid{
+
+	height: 100%;
+	border-radius: 15px;
+	box-shadow: 7px 7px 15px rgba(0,0,0,0.6);
+	margin-top: 0.5%;
+	padding: 1px;
+
+
+	background-color: black;
+}

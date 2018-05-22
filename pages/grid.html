@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+   <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet"  href="../dist/css/main.css">
+     <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>ASASA.com</title>
+    <style>
+    body{
+      background-image: url("../images/login_background.jpg");
+      background-size: 100vw 100vh;
+      background-attachment: fixed;
+    }   
+  .col {
+        border: 1px solid black;
+      }
+
+      .header {
+        padding: 20px;
+        text-align: center;
+        margin: 10px;
+      }
+
+      .purpose {
+        margin: 10px;
+      }
+
+      .purpose {
+        margin-right: 10px;
+        margin-left: 20px;
+        display: inline-block;
+      }
+
+      .box-head {
+        padding: 10px;
+      }
+    </style>
+  </head>
+<body>
+		<div id="wrapper">
+			<nav class="navbar navbar-default navbar-top-fixed" role="navigation" style="margin-bottom: 0px; background-color: black;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                 <a class="navbar-brand" href="../index.html">ASASA.com</a>
+                </div>
+                <div class="collapse navbar-collapse" id="but1">
+                <ul class= "nav navbar-nav">
+                  <li><a href="#">Find a Home</a></li>
+                  <li><a href="#">Sell a Home</a></li>
+                  
+
+                </ul>
+              
+            
+
+            <ul class="nav navbar-top-links navbar-right">
+            
+
+
+               <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>
+                    </a>
+                    
+                </li>
+                <!-- /.dropdown -->
+                
+                <!-- /.dropdown -->
+            </ul>
+            </div>
+                </nav>
+			 <div>
+        <div align="right" style="font-size: 30px;"><a href="grid.html" style="color: white;"><i class="glyphicon glyphicon-th"  ></i><b>GRID</b></a> &nbsp; <a href="map.html" style="color: white;"><i class="glyphicon glyphicon-map-marker"></i><b>MAP</b></a></div>  
+        
+       </div>
+     	    <div class="container form-row" id= "grid">
+      
+         <div class="form-row">
+              <div class="form-group col-md-3">
+                <label for="inputCity"></label>
+                <select id="inputCity" class="form-control">
+                  <option selected>Select City</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputType"></label>
+                <select id="inputType" class="form-control">
+                  <option selected>Select Type</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3">
+              	  <label for="inputType"></label>
+                <input type="text" class="form-control" id="inputLocation" placeholder="Enter location here">
+              </div>
+              <div class="form-group col-md-3">
+                 <label for="inputType"></label>
+                <select id="inputType" class="form-control">
+                  <option selected>Select No. of beds</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-3">
+                <label for="inputArea" style="color:white;">From</label>
+                <input type="text" class="form-control" id="inputLocation" placeholder="Min Price">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputArea" style="color:white;">To</label>
+                <input type="text" class="form-control" id="inputLocation" placeholder="Max Price">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputArea" style="color:white;">From</label>
+                <input type="text" class="form-control" id="inputLocation" placeholder="Min Area">
+              </div>
+              <div class="form-group col-md-3">
+                <label for="inputArea" style="color:white;">To</label>
+                <input type="text" class="form-control" id="inputLocation" placeholder="Max Area">
+              </div>
+            </div>
+            
+            
+      
+      </div>
+     <div class="row col-md-2"></div> 
+     <div class="row col-md-8">
+       <div class="row">
+    <div class="col-md-4">
+      <h4>Home</h4>
+      <img src = "../images/home.jpg" alt="img" class="img-thumb">
+      <p style="color: white">Demand: Rs.5000000</p>
+      
+    
+      <a href="#" class="btn btn-sm btn-success"><span data-toggle="modal" data-target=".bd-example-modal-lg">Details</span></a>
+    </div>
+    <div class="col-md-4">
+      <h4>Home</h4>
+      <img src = "../images/home.jpg" alt="img" class="img-thumb">
+      <p style="color: white">Demand: Rs.5000000</p>
+      
+      <a href="#" class="btn btn-sm btn-success"><span data-toggle="modal" data-target=".bd-example-modal-lg">Details</span></a>
+    </div>
+    <div class="col-md-4">
+      <h4>Home</h4>
+      <img src = "../images/home.jpg" alt="img" class="img-thumb">
+      <p style="color: white">Demand: Rs.5000000</p>
+      
+      <a href="#" class="btn btn-sm btn-success"><span data-toggle="modal" data-target=".bd-example-modal-lg">Details</span></a>
+    </div>
+  
+  </div>
+         <div class="row">
+    <div class="col-md-4">
+      <h4>Home</h4>
+      <img src = "../images/home.jpg" alt="img" class="img-thumb">
+      <p style="color: white">Demand: Rs.5000000</p>
+      
+      <a href="#" class="btn btn-sm btn-success"><span data-toggle="modal" data-target=".bd-example-modal-lg">Details</span></a>
+    </div>
+    <div class="col-md-4">
+      <h4>Home</h4>
+      <img src = "../images/home.jpg" alt="img" class="img-thumb">
+      <p style="color: white">Demand: Rs.5000000</p>
+      
+      <a href="#" class="btn btn-sm btn-success"><span data-toggle="modal" data-target=".bd-example-modal-lg">Details</span></a>
+    </div>
+    <div class="col-md-4">
+      <h4>Home</h4>
+      <img src = "../images/home.jpg" alt="img" class="img-thumb">
+      <p style="color: white">Demand: Rs.5000000</p>
+      
+      <a href="#" class="btn btn-sm btn-success"><span data-toggle="modal" data-target=".bd-example-modal-lg">Details</span></a>
+    </div>
+  
+  </div>
+         <div class="row">
+    <div class="col-md-4">
+      <h4>Home</h4>
+      <img src = "../images/home.jpg" alt="img" class="img-thumb">
+      <p style="color: white">Demand: Rs.5000000</p>
+      
+      <a href="#" class="btn btn-sm btn-success"><span data-toggle="modal" data-target=".bd-example-modal-lg">Details</span></a>
+    </div>
+    <div class="col-md-4">
+      <h4>Home</h4>
+      <img src = "../images/home.jpg" alt="img" class="img-thumb">
+      <p style="color: white">Demand: Rs.5000000</p>
+      
+      <a href="#" class="btn btn-sm btn-success"><span data-toggle="modal" data-target=".bd-example-modal-lg">Details</span></a>
+    </div>
+    <div class="col-md-4">
+      <h4>Home</h4>
+      <img src = "../images/home.jpg" alt="img" class="img-thumb">
+      <p style="color: white">Demand: Rs.5000000</p>
+      
+      <a href="#" class="btn btn-sm btn-success"><span data-toggle="modal" data-target=".bd-example-modal-lg">Details</span></a>
+    </div>
+  
+  </div>
+     </div>  
+  
+  
+
+          
+        </div>
+
+            <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+            responsive: true
+        });
+    });
+    </script>
+   <!-- Modal -->
+<!-- Large modal -->
+
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <p style="color: white">Demand: Rs.5000000</p>
+    </div>
+  </div>
+</div>
+      
+</body>
+</html>
